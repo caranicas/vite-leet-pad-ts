@@ -1,4 +1,4 @@
-import TestExtends from "../_system/TestExtends";
+import TestExtends from "../../_system/TestExtends";
 
 class LengthTest extends TestExtends {
 
@@ -6,15 +6,16 @@ class LengthTest extends TestExtends {
 
   constructor(name: string) {
     super(name);
-  };
+    this.testValue = [];
+  }
 
   setTestValue(testValue: number[]) {
     this.testValue = testValue;
-  };
+  }
 
   testFunc():number {
-     return test.length;
-  };
-}
+     return this.testValue.length;
+  }
+};
 
 export default new LengthTest('LengthTest');

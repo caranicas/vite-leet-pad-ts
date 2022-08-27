@@ -1,9 +1,19 @@
-import type {Config} from '@jest/types';
+// module.exports = {
+//   preset: "ts-jest",
+//   testEnvironment: "node",
+//   transform: {
+//     "^.+\\.(ts|tsx)$": "ts-jest",
+//   },
+//   modulePathIgnorePatterns: ["./dist/", "./test/mocks.ts"],
+//   coveragePathIgnorePatterns: ["./test/mocks.ts"],
+// };
 
-const config: Config.InitialOptions = {
-  verbose: true,
-  transform: {'^.+\\.tsx?$': 'ts-jest',
+export default {
+  preset: "ts-jest",
+  testEnvironment: "node",
+  transform: {
+    "^.+\\.(ts|tsx)$": "ts-jest",
   },
+  modulePathIgnorePatterns: ["./dist/", "./test/mocks.ts"],
+  coveragePathIgnorePatterns: ["./test/mocks.ts"],
 };
-
-export default config;
