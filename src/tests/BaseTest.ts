@@ -7,7 +7,7 @@ abstract class BaseTest<MockValue> {
   }
 
   // the underscore remove the typescript warning
-  setTestValue(_value:MockValue) : void {
+  setTestValue(_value: MockValue): void {
     // just an interface do nothing
   }
 

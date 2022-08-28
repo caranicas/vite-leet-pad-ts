@@ -1,9 +1,10 @@
 import "./style.css";
-import { localTest } from "./localTest";
+import TestRunner from "./TestRunner";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <h1 id="testSpace"></h1>
   </div>
 `;
-localTest(document.querySelector<HTMLHeadingElement>("#testSpace")!);
+
+TestRunner(document.querySelector<HTMLHeadingElement>("#testSpace")!);

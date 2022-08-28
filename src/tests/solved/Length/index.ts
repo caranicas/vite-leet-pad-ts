@@ -11,7 +11,7 @@ class LengthTest extends BaseTest<ValueType> {
     this.testValue = [];
   }
 
-  setTestValue(testValue:ValueType) :void {
+  setTestValue(testValue: ValueType): void {
     this.testValue = testValue;
   }
 
@@ -20,9 +20,11 @@ class LengthTest extends BaseTest<ValueType> {
   }
 
   // make sure we run our fest functionally within the class
-  functionalLengthTest(testValue:ValueType) :number {
+  functionalLengthTest(testValue: ValueType): number {
     return testValue.length;
   }
 }
 
+// export out default and the porblems to test against
 export default new LengthTest("LengthTest");
+export { Problem1, Problem2 } from "./length.mock";
