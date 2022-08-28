@@ -1,13 +1,7 @@
-import TestExtend from "../TestExtends";
+import TestExtend from "../BaseTest";
 
-class SystemTest extends TestExtend {
-  constructor(name: string) {
-    super(name);
-  }
+// system test doesnt accept any test value.
+type ValueType = void;
 
-  testFunc(): string {
-    return this.name;
-  }
-}
-
+class SystemTest extends TestExtend<ValueType>{}
 export default new SystemTest("SystemTest");

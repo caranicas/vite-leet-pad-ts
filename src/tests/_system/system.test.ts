@@ -5,5 +5,5 @@ test("system", () => {
 });
 
 test("verify", () => {
-  expect(SystemTest.name).toBe("SystemTest");
+  expect(SystemTest.runTest()).toBe("SystemTest");
 });

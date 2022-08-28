@@ -1,6 +1,9 @@
-import TestExtends from "../../_system/TestExtends";
+import BaseTest from "../../BaseTest";
 
-class LengthTest extends TestExtends {
+// We need to pass an array of values to the test.
+type ValueType = number[];
+
+class LengthTest extends BaseTest<ValueType> {
   testValue: number[];
 
   constructor(name: string) {
@@ -8,12 +11,17 @@ class LengthTest extends TestExtends {
     this.testValue = [];
   }
 
-  setTestValue(testValue: number[]) {
+  setTestValue(testValue:ValueType) :void {
     this.testValue = testValue;
   }
 
-  testFunc(): number {
-    return this.testValue.length;
+  runTest(): number {
+    return this.functionalLengthTest(this.testValue);
+  }
+
+  // make sure we run our fest functionally within the class
+  functionalLengthTest(testValue:ValueType) :number {
+    return testValue.length;
   }
 }
 
