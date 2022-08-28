@@ -8,9 +8,9 @@ I was really sick using the leet code editor to do problems, and or using an in-
 
 ### Tooling
 
-I built this using Vite. I didn't want to incur the bloat of a framework for this, but I also didn't want to struggle with the webpack configs for too much.
+I built this using Vite. I didn't want to incur the bloat of a framework,or tangentially related libraries, but I also didn't want to wrestle with the bable and/or webpack configs for too much. Vite offered a great place to start from.
 
-It uses the vanilla-ts vite stater, that was then modified to include jest and the accompanies ts libraries to faciliate testing.
+It uses the vanilla-ts vite stater, that was then modified to include jest and the accompanying ts libraries to faciliate testing.
 
 ### How to use
 
