@@ -1,9 +1,9 @@
-import './style.css'
-import { localTest } from './localTest';
+import "./style.css";
+import { localTest } from "./localTest";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <h1 id="testSpace"></h1>
   </div>
-`
-localTest(document.querySelector<HTMLHeadingElement>('#testSpace')!);
+`;
+localTest(document.querySelector<HTMLHeadingElement>("#testSpace")!);
